@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "EchoInStone"
+version = "0.1.0"
+description = "A tool to extract and transcribe audio."
+authors = ["Jean-Jerome Levy"]
+packages = [
+    { include = "EchoInStone" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pytubefix = "^8.12.1"
+feedparser = "^6.0.11"
+requests = "^2.32.3"
+transformers = "^4.48.3"
+torch = "^2.6.0"
+pyannote-audio = "^3.3.2"
+pydub = "^0.25.1"
+accelerate = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+echotranscriber = "main:main"
