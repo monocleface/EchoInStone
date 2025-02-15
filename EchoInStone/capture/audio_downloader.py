@@ -1,14 +1,14 @@
 import os
 import shutil
 import logging
-from ..capture import DownloaderInterface
+from . import DownloaderInterface
 
 logger = logging.getLogger(__name__)
 
-class FileDownloader(DownloaderInterface):
+class AudioDownloader(DownloaderInterface):
     def __init__(self, output_dir='data/files'):
         """
-        Initializes the FileDownloader with a specified output directory.
+        Initializes the AudioDownloader with a specified output directory.
 
         Args:
             output_dir (str): The directory where copied files will be saved.
@@ -17,7 +17,7 @@ class FileDownloader(DownloaderInterface):
 
     def download(self, file_path: str) -> bool:
         """
-        Copies a file from a local file path to the specified output path.
+        Copies an audio file from a local file path to the specified output path.
 
         Args:
             file_path (str): Local file path to copy the file from.

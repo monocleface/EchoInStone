@@ -9,7 +9,7 @@
 - **Alignment**: Align transcribed text with the corresponding audio segments using a customized algorithm tailored to be highly efficient and faithful to the outputs of Whisper and Pyannote, `SpeakerAlignement`.
 - **Flexible and Extensible Pipeline**: Easily integrate new models or processing steps into an orchestrated pipeline, `AudioProcessingOrchestrator`.
 
-> Note: The current version of EchoInStone is a preliminary release and does not yet support passing parameters as command-line arguments. Future updates will include more flexible configuration options and enhanced functionality.
+> Note: The current version of EchoInStone is a preliminary release. Future updates will include more flexible configuration options and enhanced functionality.
 
 ## Installation
 
@@ -41,7 +41,7 @@
      2. Click on "New token".
      3. Copy the generated token and paste it into the `EchoInStone/config.py` file as shown below:
 
-```textplain
+```python
 # EchoInStone/config.py
 
 # Hugging Face authentication token
@@ -55,17 +55,48 @@ HUGGING_FACE_TOKEN = "your_token_here"
 To transcribe and diarize a YouTube video, you can run the following command:
 
 ```bash
-poetry run python main.py
+poetry run python main.py <audio_input_url>
 ```
 
-This will process the audio from the specified YouTube URL, transcribe it, perform speaker diarization, and save the results to a file.
+- `<audio_input_url>`: The URL of the audio input (YouTube, podcast, or direct audio file).
 
-### Customization
+### Command-Line Arguments
 
-- **Audio Input**: Modify the `ECHO_INPUT` constant in `main.py` to point to the YouTube video you want to process [\*].
-- **Output Directory**: Change the `output_dir` parameter in the `DataSaver` initialization to specify where the results should be saved.
+- **`--output_dir`**: Directory to save the output files. Default is `"results"`.
+  ```bash
+  poetry run python main.py <audio_input_url> --output_dir <output_directory>
+  ```
 
-> \* This is a preliminary release. Future updates will include more flexible configuration options and enhanced functionality.
+- **`--transcription_output`**: Filename for the transcription output. Default is `"speaker_transcriptions.json"`.
+  ```bash
+  poetry run python main.py <audio_input_url> --transcription_output <output_filename>
+  ```
+
+### Examples
+
+- **Transcribe and diarize a YouTube video**:
+  ```bash
+  poetry run python main.py "https://www.youtube.com/watch?v=plZRCMx_Jd8"
+  ```
+
+- **Transcribe and diarize a podcast**:
+  ```bash
+  poetry run python main.py "https://radiofrance-podcast.net/podcast09/rss_13957.xml"
+  ```
+
+- **Transcribe and diarize a direct MP3 file**:
+  ```bash
+  poetry run python main.py "https://media.radiofrance-podcast.net/podcast09/25425-13.02.2025-ITEMA_24028677-2025C53905E0006-NET_MFC_D378B90D-D570-44E9-AB5A-F0CC63B05A14-21.mp3"
+  ```
+
+## Testing
+
+To run the tests, use the following command:
+```bash
+poetry run pytest
+```
+
+This command will execute all the tests, including BDD tests, to ensure the functionality of the application.
 
 ## Configuration
 

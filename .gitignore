@@ -1,8 +1,9 @@
 # Hugging Face Token
 EchoInStone/config_private.py
 
-# transcriptions output and logs
+# transcriptions test, output and logs
 results/
+test_output/
 app.log
 
 # Byte-compiled / optimized / DLL files

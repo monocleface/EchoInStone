@@ -2,6 +2,7 @@ import feedparser
 import requests
 import logging
 from ..capture import DownloaderInterface
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -34,9 +35,10 @@ class PodcastDownloader(DownloaderInterface):
                         audio_url = link.href
                         response = requests.get(audio_url)
                         audio_file = f"{self.output_dir}/{entry.title}.mp3"
-                        with open(audio_file, 'wb') as f:
+                        safe_audio_file = re.sub(r'[^\w\s-]', '', audio_file).replace(' ', '_')
+                        with open(safe_audio_file, 'wb') as f:
                             f.write(response.content)
-                        logger.info(f"Podcast downloaded: {audio_file}")
+                        logger.info(f"Podcast downloaded: {safe_audio_file}")
                         return True
             logger.warning("Episode not found.")
             return False
