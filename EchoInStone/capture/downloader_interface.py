@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class DownloaderInterface(ABC):
     @abstractmethod
-    def download(self, url: str) -> bool:
+    def download(self, url: str) -> str:
         """Downloads a file from a URL or source path.
 
         Args:

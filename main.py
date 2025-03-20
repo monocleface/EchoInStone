@@ -8,7 +8,7 @@ from EchoInStone.utils import DataSaver
 from EchoInStone.utils import timer, log_time
 
 # Configure logging
-configure_logging(logging.DEBUG)
+configure_logging(logging.INFO)
 logger = logging.getLogger(__name__)
 
 
