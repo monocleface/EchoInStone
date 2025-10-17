@@ -53,6 +53,13 @@ Youtube 동영상과 팟캐스트를 포함한 다양한 오디오 소스를 지
 # Hugging Face authentication token
 HUGGING_FACE_TOKEN = "your_token_here"
 ```
+401 Client Error: Unauthorized for url: https://huggingface.co/openai/whisper-large-v3-turbo/resolve/main/processor_config.json 에러가 발생하면 아래를 수행하시면 됩니다.
+콘솔에서
+
+```
+$huggingface-cli login
+```
+키 입력 커서가 나오면, 위 토큰을 입력하고 y를 누르시면 동작됩니다.
 
 ## Usage
 
