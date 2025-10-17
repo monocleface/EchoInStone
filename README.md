@@ -45,7 +45,7 @@ Youtube 동영상과 팟캐스트를 포함한 다양한 오디오 소스를 지
   - Hugging Face 토큰을 추가해야 합니다. 아래의 단계를 따라해주세요:
      1. [Hugging Face Settings](https://huggingface.co/settings/tokens) 으로 이동.
      2. "New token" 을 클릭.
-     3. 생성된 토큰을 복사하여 `Whisper_Pyannote_Sample/config.py` 파일에 아래와 같이 붙여넣습니다:
+     3. 생성된 토큰을 복사하여 `EchoInStone/config.py` 파일에 아래와 같이 붙여넣습니다:
 
 ```python
 # EchoInStone/config.py
