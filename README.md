@@ -93,16 +93,6 @@ poetry run python main.py <audio_input_url>
   poetry run python main.py "https://www.youtube.com/watch?v=WyT3Fj7Sa4A&list=PL-qgycYC6pKqVhBVGT_Ob1D3sp32twvI4"
   ```
 
-- **팟캐스트를 Transcribe하고 기록하세요**:
-  ```bash
-  poetry run python main.py "https://radiofrance-podcast.net/podcast09/rss_13957.xml"
-  ```
-
-- **직접 MP3 파일을 Transcribe하고 기록하세요**:
-  ```bash
-  poetry run python main.py "https://media.radiofrance-podcast.net/podcast09/25425-13.02.2025-ITEMA_24028677-2025C53905E0006-NET_MFC_D378B90D-D570-44E9-AB5A-F0CC63B05A14-21.mp3"
-  ```
-
 ## 테스팅
 
 신뢰성을 보장하고 회귀를 방지하기 위해 단위 테스트와 BDD 테스트를 모두 포함하는 테스트를 합니다.
