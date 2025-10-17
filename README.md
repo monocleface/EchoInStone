@@ -168,7 +168,7 @@ poetry run pytest tests/ features/ --cov=Whisper_Pyannote_Sample --cov-report ht
 
 참여를 환영합니다. 다음 단계를 따라주세요:
 
-1. 저장소(https://github.com/jeanjerome/EchoInStone)를 포크합니다.
+1. 저장소(https://github.com/monocleface/EchoInStone)를 포크합니다.
 2. 새로운 브랜치를 생성합니다 (`git checkout -b feature-branch`).
 3. 변경 사항을 적용하고 커밋합니다 (`git commit -am 'Add new feature'`).
 4. 푸시합니다 (`git push origin feature-branch`).
