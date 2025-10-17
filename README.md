@@ -28,8 +28,8 @@ Youtube 동영상과 팟캐스트를 포함한 다양한 오디오 소스를 지
 
 1. **저장소 복제**:
    ```bash
-   git clone https://github.com/jeanjerome/EchoInStone.git
-   cd Whisper_Pyannote_Sample
+   git clone https://github.com/monocleface/EchoInStone.git
+   cd EchoInStone
    ```
 
 2. **Poetry를 이용하여 종속성 성치**:
@@ -180,9 +180,9 @@ poetry run pytest tests/ features/ --cov=Whisper_Pyannote_Sample --cov-report ht
 
 ## Acknowledgments
 
-- Thanks to the open-source community for the various libraries and models used in this project.
-- Special thanks to the contributors and maintainers of the models and tools that make this project possible.
+- 이 프로젝트에서 사용된 다양한 라이브러리와 모델을 제공해 준 오픈 소스 커뮤니티에 감사드립니다.
+- 이 프로젝트를 가능하게 하는 모델과 도구의 기여자와 유지 관리자에게 특별히 감사 드립니다.
 
 ## Contact
 
-For any questions or suggestions, please open an issue.
+질문이나 제안 사항이 있으시면 이슈를 작성해주세요.
