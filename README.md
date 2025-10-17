@@ -90,7 +90,7 @@ poetry run python main.py <audio_input_url>
 
 - **유투브 동영상을 Transcribe하고 기록하세요**:
   ```bash
-  poetry run python main.py "https://www.youtube.com/watch?v=plZRCMx_Jd8"
+  poetry run python main.py "https://www.youtube.com/watch?v=WyT3Fj7Sa4A&list=PL-qgycYC6pKqVhBVGT_Ob1D3sp32twvI4"
   ```
 
 - **팟캐스트를 Transcribe하고 기록하세요**:
