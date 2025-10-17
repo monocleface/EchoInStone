@@ -1,4 +1,4 @@
-# Whisper+Pyannote Sample
+# EchoInStone
 
 오디오 파일에서 발화자 세그먼트를 전사, 기록 및 정렬하도록 설계된 포괄적인 오디오 처리 도구로 정확하고 충실한 Transcription을 달성하는데 중점을 두고 있습니다.
 Youtube 동영상과 팟캐스트를 포함한 다양한 오디오 소스를 지원하고, 속도보다 정밀도와 안정성을 우선시하는 유연한 오디오 데이터 처리 파이프라인을 제공합니다.
@@ -48,7 +48,7 @@ Youtube 동영상과 팟캐스트를 포함한 다양한 오디오 소스를 지
      3. 생성된 토큰을 복사하여 `Whisper_Pyannote_Sample/config.py` 파일에 아래와 같이 붙여넣습니다:
 
 ```python
-# Whisper_Pyannote_Sample/config.py
+# EchoInStone/config.py
 
 # Hugging Face authentication token
 HUGGING_FACE_TOKEN = "your_token_here"
